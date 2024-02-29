@@ -52,5 +52,6 @@
 }
 
 #body {
-  white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */
+  white-space: pre-wrap; /* 공백과 줄바꿈을 처리할때 브라우저 동작을 제어할수있게해준다. */
+
 }

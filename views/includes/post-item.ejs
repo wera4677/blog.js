@@ -3,8 +3,10 @@
   <p class="post-item-author">By <%= post.author_name %></p>
   <p><%= post.summary %></p>
   <div class="post-actions">
-    <button class="btn btn-alt">게시물 삭제</button>
-    <a href="...">게시물 편집</a>
+    <form action="/posts/<%= post.id %>/delete" method="POST">
+      <button class="btn btn-alt">게시물 삭제</button>
+    </form>
+    <a href="/posts/<%= post.id %>/edit">게시물 편집</a>
     <a class="btn" href="/posts/<%= post.id %>">게시물 보기</a>
   </div>
 </article>
